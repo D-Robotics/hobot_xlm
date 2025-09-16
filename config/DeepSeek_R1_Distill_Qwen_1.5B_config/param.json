@@ -1,0 +1,18 @@
+{
+  "model_path": "./DeepSeek_R1_Distill_Qwen_1.5B_4096.hbm",
+  "token_config_path": "./config/DeepSeek_R1_Distill_Qwen_1.5B_config/",
+  "config_path": "",
+  "k_cache_int8": false,
+  "model_type": 3,
+  "context_size": 1024,
+  "sampling": {
+    "top_k": 3,
+    "top_p": 0.95,
+    "min_p": 0.1,
+    "temp": 0.1,
+    "typ_p": 1,
+    "min_keep": 5
+  },
+  "prompt_file": "",
+  "path_prompt_cache": ""
+}
