@@ -1,17 +1,21 @@
 {
-  "model_path": "./DeepSeek_R1_Distill_Qwen_1.5B_4096.hbm",
+  "model_path": "./DeepSeek_R1_Distill_Qwen_1.5B_1024.hbm",
   "token_config_path": "./config/DeepSeek_R1_Distill_Qwen_1.5B_config/",
   "config_path": "",
   "k_cache_int8": false,
-  "model_type": 3,
+  "model_type": 1,
   "context_size": 1024,
   "sampling": {
-    "top_k": 3,
-    "top_p": 0.95,
-    "min_p": 0.1,
-    "temp": 0.1,
-    "typ_p": 1,
-    "min_keep": 5
+    "top_k": 50,
+    "top_p": 1.0,
+    "min_p": 0.0,
+    "temp": 1.0,
+    "typ_p": 1.0,
+    "min_keep": 1,
+    "penalty_last_n": 128,
+    "penalty_freq": 0.1,
+    "penalty_present": 0.1,
+    "penalty_repeat": 1.2
   },
   "prompt_file": "",
   "path_prompt_cache": ""

@@ -25,6 +25,12 @@ int main(int argc, char** argv) {
   executor.add_node(node);
   executor.spin();
 
-  rclcpp::shutdown();
+  if (rclcpp::ok()) {
+    rclcpp::shutdown();
+  }
+
+  // rclcpp::init(argc, argv);
+  // rclcpp::spin(std::make_shared<XLMNode>("xlm_node"));
+  // rclcpp::shutdown();
   return 0;
 }

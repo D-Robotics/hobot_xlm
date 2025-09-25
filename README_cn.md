@@ -19,8 +19,6 @@
 
 ## 依赖库
 
-- opencv:3.4.5
-
 ros package：
 
 - ai_msgs
@@ -91,13 +89,13 @@ ros package：
 - DeepSeek_R1_Distill_Qwen_1.5B
 
 ```shell
-wget -c ftp://oeftp@sdk.d-robotics.cc/oe_llm_v0.9.0/DeepSeek_R1_Distill_Qwen_1.5B_4096.hbm --ftp-password=Oeftp~123$%
+wget -c ftp://oeftp@sdk.d-robotics.cc/oe_llm/model/DeepSeek_R1_Distill_Qwen_1.5B_1024.hbm --ftp-password=Oeftp~123$%
 ```
 
 - DeepSeek_R1_Distill_Qwen_7B
 
 ```shell
-wget -c ftp://oeftp@sdk.d-robotics.cc/oe_llm_v0.9.0/DeepSeek_R1_Distill_Qwen_7B_1024.hbm --ftp-password=Oeftp~123$%
+wget -c ftp://oeftp@sdk.d-robotics.cc/oe_llm/model/DeepSeek_R1_Distill_Qwen_7B_1024.hbm --ftp-password=Oeftp~123$%
 ```
 
 ## 运行
@@ -166,7 +164,7 @@ log：
  text_msg_pub_topic_name: /tts_text
  ros_string_sub_topic_name: /prompt_text
 [WARN] [1757949703.800428372] [xlm_node]: Model Parameter:
- model_path:   ./DeepSeek_R1_Distill_Qwen_1.5B_4096.hbm
+ model_path:   ./DeepSeek_R1_Distill_Qwen_1.5B_1024.hbm
  token_path:   ./config/DeepSeek_R1_Distill_Qwen_1.5B_config/
  k_cache_int8: 0
  model_type:   3
